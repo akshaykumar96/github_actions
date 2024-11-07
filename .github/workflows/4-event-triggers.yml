@@ -1,11 +1,12 @@
 name: 4-event-triggers
-# on: 
+on: workflow_dispatch
+# [push, pull_request]
 #     push:
 #         branches:
 #             - 'devbranch'
-on:
-    schedule:
-      - cron: "*/1 0 * * *"
+# on:
+#     schedule:
+#       - cron: "*/1 0 * * *"
 jobs:
     dev-branch-event-trigger-job:
         name: dev branch event trigger
