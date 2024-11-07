@@ -1,10 +1,10 @@
-name: 4-Event-Triggers
+name: 4-event-triggers
 on: 
     push:
         branches:
-            -devbranch
+            - 'devbranch'
 jobs:
-    my-first-job:
+    dev-branch-event-trigger-job:
         name: dev branch event trigger
         runs-on: ubuntu-latest
         steps:
