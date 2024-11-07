@@ -9,6 +9,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
             distribution: 'adopt'
+            java-version: '21'
       - run: echo "java installation"
       - run: ls -l
       - run: mvn build
