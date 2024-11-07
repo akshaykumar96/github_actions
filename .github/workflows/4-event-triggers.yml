@@ -1,8 +1,11 @@
 name: 4-event-triggers
-on: 
-    push:
-        branches:
-            - 'devbranch'
+# on: 
+#     push:
+#         branches:
+#             - 'devbranch'
+on:
+    schedule:
+      - cron: "*/1 0 * * *"
 jobs:
     dev-branch-event-trigger-job:
         name: dev branch event trigger
