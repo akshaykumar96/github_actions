@@ -6,8 +6,8 @@
 # https://github.com/actions/labeler
 
 name: 3-Labeler
-#on: [pull_request_target]
-on: workflow_dispatch
+on: [pull_request_target]
+#on: workflow_dispatch
 
 jobs:
   label:
